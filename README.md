@@ -1,50 +1,53 @@
-# React + TypeScript + Vite
+# Demo Project: Ecommerce Product Catalogue
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Link to live product:** 
 
-Currently, two official plugins are available:
+### About the project:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In this project, I have implemented a ecommerce website product catalogue. This is a demo project where I have tried to incorporate best practices for creating a responsive grid/list view with a search filter and sorting functionality. I have also implemented dark/light theme which is automatically set based on browser’s theme.  
 
-## Expanding the ESLint configuration
+Data is fetched from this public endpoint: 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+[](https://fakestoreapi.com/products)
 
-- Configure the top-level `parserOptions` property like this:
+The website is deployed on Vercel
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Light Theme:
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2bb7d3a8-19f8-4e27-b159-207a871ff9df/02e2d43f-4a4e-481d-adcb-6c889331fb25/image.png)
+
+Dark Theme:
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2bb7d3a8-19f8-4e27-b159-207a871ff9df/f6829ccb-87a4-4585-9d35-f434b3211e7a/image.png)
+
+### Technologies:
+
+I have used React + TypeScript + Vite, Tailwind CSS for styling, Vercel for deployment, and Axios for API integration.
+
+### Setup:
+
+Follow the steps below to run the application locally:
+
+1. Clone the repository using 
+
+```bash
+git clone [repository_name]
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Install all the dependencies 
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+1. To run the application 
+
+```bash
+npm run dev
+```
+
+### Status
+
+The application is still in progress. In the next versions, React redux for global state management I will implement home page, shopping cart, and authentication.
+
+## Thank you!
