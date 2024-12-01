@@ -34,13 +34,13 @@ Follow the steps below to run the application locally:
 git clone [repository_name]
 ```
 
-1. Install all the dependencies 
+2. Install all the dependencies 
 
 ```bash
 npm install
 ```
 
-1. To run the application 
+3. To run the application 
 
 ```bash
 npm run dev
