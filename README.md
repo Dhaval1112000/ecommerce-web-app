@@ -1,14 +1,12 @@
 # Demo Project: Ecommerce Product Catalogue
 
-**Link to live product:** 
+**Link to live product:** https://ecommerce-product-catalog-nine.vercel.app/ 
 
 ### About the project:
 
 In this project, I have implemented a ecommerce website product catalogue. This is a demo project where I have tried to incorporate best practices for creating a responsive grid/list view with a search filter and sorting functionality. I have also implemented dark/light theme which is automatically set based on browser’s theme.  
 
-Data is fetched from this public endpoint: 
-
-[](https://fakestoreapi.com/products)
+Data is fetched from this public endpoint: https://fakestoreapi.com/products
 
 The website is deployed on Vercel
 
